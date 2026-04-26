@@ -19,9 +19,7 @@ class EnterpriseSleekTheme extends FaTheme {
 
   @override
   FaThemeTokens createThemeTokens() {
-    const colors = FaColorTokens(
-      brightness: Brightness.light,
-
+    final colors = FaColorTokens(
       primary: Color(0xFF1A237E),
       onPrimary: Colors.white,
 
@@ -72,25 +70,17 @@ class EnterpriseSleekTheme extends FaTheme {
 
       radius: const FaRadiusTokens(sm: 4, md: 4, lg: 6, xl: 8),
 
-      typography: const FaTypographyTokens(
-        body: TextStyle(fontSize: 14, fontFamily: "Roboto"),
-        title: TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-          fontFamily: "Roboto",
-        ),
-        caption: TextStyle(fontSize: 12, fontFamily: "Roboto"),
-      ),
+      typography: FaTypographyTokens(),
 
       components: const FaComponentTokens(),
 
-      layout: const FaLayoutTokens(sidebarWidth: 260, contentMaxWidth: 1280),
-
-      layoutColors: const FaLayoutColorTokens(
-        sidebarSurface: Color(0xFF1A237E),
-        onSidebarSurface: Colors.white,
-        topbarSurface: Colors.white,
-        onTopbarSurface: Color(0xFF1A237E),
+      layout: const FaLayoutTokens(
+        colors: FaLayoutColorTokens(
+          sidebarSurface: Color(0xFF1A237E),
+          onSidebarSurface: Colors.white,
+          topbarSurface: Colors.white,
+          onTopbarSurface: Color(0xFF1A237E),
+        ),
       ),
 
       motion: const FaMotionTokens(),

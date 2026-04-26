@@ -19,9 +19,7 @@ class GlassmorphismTheme extends FaTheme {
 
   @override
   FaThemeTokens createThemeTokens() {
-    const colors = FaColorTokens(
-      brightness: Brightness.dark,
-
+    final colors = FaColorTokens(
       primary: Color(0xFF00E5FF),
       onPrimary: Colors.black,
 
@@ -36,8 +34,9 @@ class GlassmorphismTheme extends FaTheme {
 
       // nền tổng thể
       background: Color(0xFF0A0F1F),
-      surface: Color(0xCC141A2E), // 80% opacity dark glass
+      surface: Color(0xCC141A2E),
 
+      // 80% opacity dark glass
       onSurface: Colors.white,
       onSurfaceVariant: Color(0xFFB0BEC5),
 
@@ -74,27 +73,17 @@ class GlassmorphismTheme extends FaTheme {
 
       radius: const FaRadiusTokens(sm: 12, md: 16, lg: 20, xl: 24),
 
-      typography: const FaTypographyTokens(
-        body: TextStyle(fontSize: 14, fontFamily: "Inter"),
-        title: TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-          fontFamily: "Inter",
-        ),
-        caption: TextStyle(fontSize: 12, fontFamily: "Inter"),
-      ),
+      typography: FaTypographyTokens(),
 
       components: const FaComponentTokens(),
-
-      layout: const FaLayoutTokens(),
-
-      layoutColors: const FaLayoutColorTokens(
-        sidebarSurface: Color(0xD9141A2E),
-        onSidebarSurface: Colors.white,
-        topbarSurface: Color(0xCC101628),
-        onTopbarSurface: Colors.white,
+      layout: const FaLayoutTokens(
+        colors: FaLayoutColorTokens(
+          sidebarSurface: Color(0xD9141A2E),
+          onSidebarSurface: Colors.white,
+          topbarSurface: Color(0xCC101628),
+          onTopbarSurface: Colors.white,
+        ),
       ),
-
       motion: const FaMotionTokens(),
     );
   }

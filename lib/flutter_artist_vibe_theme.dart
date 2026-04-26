@@ -25,4 +25,12 @@ class FlutterArtistVibeThemeKit {
     highContrastDarkTheme,
     neumorphismTheme,
   ];
+
+  static final List<FaTheme> allThemes = [
+    glassmorphismTheme,
+    glassDarkSleekTheme,
+    enterpriseSleekTheme,
+    highContrastDarkTheme,
+    neumorphismTheme,
+  ];
 }

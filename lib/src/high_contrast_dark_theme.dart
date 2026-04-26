@@ -19,9 +19,7 @@ class HighContrastDarkTheme extends FaTheme {
 
   @override
   FaThemeTokens createThemeTokens() {
-    const colors = FaColorTokens(
-      brightness: Brightness.dark,
-
+    final colors = FaColorTokens(
       primary: Color(0xFF00FF41),
       onPrimary: Colors.black,
 
@@ -72,25 +70,17 @@ class HighContrastDarkTheme extends FaTheme {
 
       radius: const FaRadiusTokens(sm: 2, md: 2, lg: 4, xl: 6),
 
-      typography: const FaTypographyTokens(
-        body: TextStyle(fontSize: 14, fontFamily: "RobotoMono"),
-        title: TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-          fontFamily: "RobotoMono",
-        ),
-        caption: TextStyle(fontSize: 12, fontFamily: "RobotoMono"),
-      ),
+      typography: FaTypographyTokens(),
 
       components: const FaComponentTokens(),
 
-      layout: const FaLayoutTokens(),
-
-      layoutColors: const FaLayoutColorTokens(
-        sidebarSurface: Color(0xFF0A0A0A),
-        onSidebarSurface: Color(0xFF00FF41),
-        topbarSurface: Color(0xFF121212),
-        onTopbarSurface: Color(0xFF00FF41),
+      layout: const FaLayoutTokens(
+        colors: FaLayoutColorTokens(
+          sidebarSurface: Color(0xFF0A0A0A),
+          onSidebarSurface: Color(0xFF00FF41),
+          topbarSurface: Color(0xFF121212),
+          onTopbarSurface: Color(0xFF00FF41),
+        ),
       ),
 
       motion: const FaMotionTokens(),

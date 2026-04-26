@@ -19,9 +19,7 @@ class GlassDarkSleekTheme extends FaTheme {
 
   @override
   FaThemeTokens createThemeTokens() {
-    const colors = FaColorTokens(
-      brightness: Brightness.dark,
-
+    final colors = FaColorTokens(
       primary: Color(0xFF00E5FF),
       onPrimary: Colors.black,
 
@@ -72,25 +70,17 @@ class GlassDarkSleekTheme extends FaTheme {
 
       radius: const FaRadiusTokens(sm: 10, md: 14, lg: 18, xl: 22),
 
-      typography: const FaTypographyTokens(
-        body: TextStyle(fontSize: 14, fontFamily: "Inter"),
-        title: TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-          fontFamily: "Inter",
-        ),
-        caption: TextStyle(fontSize: 12, fontFamily: "Inter"),
-      ),
+      typography: FaTypographyTokens(),
 
       components: const FaComponentTokens(),
 
-      layout: const FaLayoutTokens(),
-
-      layoutColors: const FaLayoutColorTokens(
-        sidebarSurface: Color(0xFF141929),
-        onSidebarSurface: Colors.white,
-        topbarSurface: Color(0xFF0A0F1F),
-        onTopbarSurface: Colors.white,
+      layout: const FaLayoutTokens(
+        colors: FaLayoutColorTokens(
+          sidebarSurface: Color(0xFF141929),
+          onSidebarSurface: Colors.white,
+          topbarSurface: Color(0xFF0A0F1F),
+          onTopbarSurface: Colors.white,
+        ),
       ),
 
       motion: const FaMotionTokens(),

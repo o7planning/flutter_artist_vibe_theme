@@ -19,9 +19,7 @@ class NeumorphismTheme extends FaTheme {
 
   @override
   FaThemeTokens createThemeTokens() {
-    const colors = FaColorTokens(
-      brightness: Brightness.light,
-
+    final colors = FaColorTokens(
       primary: Color(0xFF3F51B5),
       onPrimary: Colors.white,
 
@@ -72,27 +70,17 @@ class NeumorphismTheme extends FaTheme {
 
       radius: const FaRadiusTokens(sm: 12, md: 16, lg: 20, xl: 24),
 
-      typography: const FaTypographyTokens(
-        body: TextStyle(fontSize: 14, fontFamily: "Ubuntu"),
-        title: TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-          fontFamily: "Ubuntu",
-        ),
-        caption: TextStyle(fontSize: 12, fontFamily: "Ubuntu"),
-      ),
+      typography: FaTypographyTokens(),
 
       components: const FaComponentTokens(),
-
-      layout: const FaLayoutTokens(),
-
-      layoutColors: const FaLayoutColorTokens(
-        sidebarSurface: Color(0xFFDDE4ED),
-        onSidebarSurface: Color(0xFF44474A),
-        topbarSurface: Color(0xFFE0E5EC),
-        onTopbarSurface: Color(0xFF121212),
+      layout: const FaLayoutTokens(
+        colors: FaLayoutColorTokens(
+          sidebarSurface: Color(0xFFDDE4ED),
+          onSidebarSurface: Color(0xFF44474A),
+          topbarSurface: Color(0xFFE0E5EC),
+          onTopbarSurface: Color(0xFF121212),
+        ),
       ),
-
       motion: const FaMotionTokens(),
     );
   }
