@@ -1,4 +1,4 @@
-import 'package:flutter_artist_theme/flutter_artist_theme.dart';
+import 'package:flutter_artist_styles/flutter_artist_styles.dart';
 import 'package:flutter_artist_vibe_theme/src/glass_dark_sleek_theme.dart';
 
 import 'src/enterprise_sleek_theme.dart';
