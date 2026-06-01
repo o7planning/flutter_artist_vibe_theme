@@ -43,44 +43,23 @@ class NeumorphismTheme extends FaTheme {
       surfaceContainer: Color(0xFFE0E5EC),
       surfaceContainerHigh: Color(0xFFE6EBF2),
       surfaceContainerHighest: Color(0xFFEEF2F8),
-
-      textPrimary: Color(0xFF44474A),
-      textSecondary: Color(0xFF757575),
-
-      border: Colors.transparent,
       outline: Color(0xFFCAD3DF),
       outlineVariant: Color(0xFFDDE4ED),
-
       shadow: Colors.black,
       scrim: Colors.black26,
-
       inverseSurface: Color(0xFF2C2F33),
       onInverseSurface: Colors.white,
       inversePrimary: Color(0xFF9FA8DA),
-
-      divider: Color(0xFFDDE4ED),
     );
 
     return FaThemeTokens(
       colors: colors,
-
       spacing: const FaSpacingTokens(),
-
       elevation: const FaElevationTokens(level1: 2, level2: 4, level3: 6),
-
       radius: const FaRadiusTokens(sm: 12, md: 16, lg: 20, xl: 24),
-
       typography: FaTypographyTokens(),
-
       components: const FaComponentTokens(),
-      layout: const FaLayoutTokens(
-        colors: FaLayoutColorTokens(
-          sidebarSurface: Color(0xFFDDE4ED),
-          onSidebarSurface: Color(0xFF44474A),
-          topbarSurface: Color(0xFFE0E5EC),
-          onTopbarSurface: Color(0xFF121212),
-        ),
-      ),
+      layout: const FaLayoutTokens(),
       motion: const FaMotionTokens(),
     );
   }

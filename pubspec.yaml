@@ -1,8 +1,8 @@
 name: flutter_artist_vibe_theme
-description: "Flutter Artist Vibe Theme"
-version: 0.0.1
+description: A premium thematic extension for FlutterArtist that provides advanced multi-layered aesthetic styles, including Glassmorphism, Neumorphism, and High Contrast layouts.
+version: 0.8.1
 resolution: workspace
-homepage:
+homepage: https://o7planning.github.io
 
 environment:
   sdk: ^3.11.3
@@ -12,8 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_artist_core: ^0.9.1
-  flutter_artist_styles: ^0.9.1+1
+  flutter_artist_core: ^1.0.0
+  flutter_artist_styles: ^2.1.0
 
 dev_dependencies:
   flutter_test:

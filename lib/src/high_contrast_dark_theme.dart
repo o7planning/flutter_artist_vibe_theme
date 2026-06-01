@@ -43,11 +43,6 @@ class HighContrastDarkTheme extends FaTheme {
       surfaceContainer: Color(0xFF121212),
       surfaceContainerHigh: Color(0xFF1E1E1E),
       surfaceContainerHighest: Color(0xFF2A2A2A),
-
-      textPrimary: Colors.white,
-      textSecondary: Color(0xFFBDBDBD),
-
-      border: Color(0xFF00FF41),
       outline: Color(0xFF00FF41),
       outlineVariant: Color(0xFF2A2A2A),
 
@@ -57,32 +52,16 @@ class HighContrastDarkTheme extends FaTheme {
       inverseSurface: Color(0xFFECEFF1),
       onInverseSurface: Colors.black,
       inversePrimary: Color(0xFF00FF41),
-
-      divider: Color(0xFF2A2A2A),
     );
 
     return FaThemeTokens(
       colors: colors,
-
       spacing: const FaSpacingTokens(),
-
       elevation: const FaElevationTokens(level1: 2, level2: 4, level3: 6),
-
       radius: const FaRadiusTokens(sm: 2, md: 2, lg: 4, xl: 6),
-
       typography: FaTypographyTokens(),
-
       components: const FaComponentTokens(),
-
-      layout: const FaLayoutTokens(
-        colors: FaLayoutColorTokens(
-          sidebarSurface: Color(0xFF0A0A0A),
-          onSidebarSurface: Color(0xFF00FF41),
-          topbarSurface: Color(0xFF121212),
-          onTopbarSurface: Color(0xFF00FF41),
-        ),
-      ),
-
+      layout: const FaLayoutTokens(),
       motion: const FaMotionTokens(),
     );
   }

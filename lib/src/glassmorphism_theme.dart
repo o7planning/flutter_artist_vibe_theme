@@ -46,11 +46,6 @@ class GlassmorphismTheme extends FaTheme {
       surfaceContainer: Color(0xCC141A2E),
       surfaceContainerHigh: Color(0xD91A2238),
       surfaceContainerHighest: Color(0xE6222C45),
-
-      textPrimary: Colors.white,
-      textSecondary: Color(0xFFB0BEC5),
-
-      border: Color(0x442A344D),
       outline: Color(0x553A4666),
       outlineVariant: Color(0x332A344D),
 
@@ -60,30 +55,16 @@ class GlassmorphismTheme extends FaTheme {
       inverseSurface: Color(0xFFF2F5F8),
       onInverseSurface: Colors.black,
       inversePrimary: Color(0xFF00B8D4),
-
-      divider: Color(0x332A344D),
     );
 
     return FaThemeTokens(
       colors: colors,
-
       spacing: const FaSpacingTokens(),
-
       elevation: const FaElevationTokens(level1: 2, level2: 6, level3: 12),
-
       radius: const FaRadiusTokens(sm: 12, md: 16, lg: 20, xl: 24),
-
       typography: FaTypographyTokens(),
-
       components: const FaComponentTokens(),
-      layout: const FaLayoutTokens(
-        colors: FaLayoutColorTokens(
-          sidebarSurface: Color(0xD9141A2E),
-          onSidebarSurface: Colors.white,
-          topbarSurface: Color(0xCC101628),
-          onTopbarSurface: Colors.white,
-        ),
-      ),
+      layout: const FaLayoutTokens(),
       motion: const FaMotionTokens(),
     );
   }

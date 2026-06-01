@@ -43,11 +43,6 @@ class EnterpriseSleekTheme extends FaTheme {
       surfaceContainer: Color(0xFFF1F3F4),
       surfaceContainerHigh: Color(0xFFE8EAED),
       surfaceContainerHighest: Color(0xFFDADCE0),
-
-      textPrimary: Color(0xFF202124),
-      textSecondary: Color(0xFF5F6368),
-
-      border: Color(0xFFDADCE0),
       outline: Color(0xFFC6C9CC),
       outlineVariant: Color(0xFFDADCE0),
 
@@ -57,32 +52,16 @@ class EnterpriseSleekTheme extends FaTheme {
       inverseSurface: Color(0xFF2A2E33),
       onInverseSurface: Colors.white,
       inversePrimary: Color(0xFF9FA8DA),
-
-      divider: Color(0xFFDADCE0),
     );
 
     return FaThemeTokens(
       colors: colors,
-
       spacing: const FaSpacingTokens(xs: 4, sm: 8, md: 12, lg: 16, xl: 24),
-
       elevation: const FaElevationTokens(level1: 2, level2: 4, level3: 6),
-
       radius: const FaRadiusTokens(sm: 4, md: 4, lg: 6, xl: 8),
-
       typography: FaTypographyTokens(),
-
       components: const FaComponentTokens(),
-
-      layout: const FaLayoutTokens(
-        colors: FaLayoutColorTokens(
-          sidebarSurface: Color(0xFF1A237E),
-          onSidebarSurface: Colors.white,
-          topbarSurface: Colors.white,
-          onTopbarSurface: Color(0xFF1A237E),
-        ),
-      ),
-
+      layout: const FaLayoutTokens(),
       motion: const FaMotionTokens(),
     );
   }
